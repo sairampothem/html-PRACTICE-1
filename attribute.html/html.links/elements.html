@@ -1,0 +1,76 @@
+<html>
+    <head><H1 STYLE="text-align:center; color:darkmagenta">FORM ELEMENTS</H1><BR>
+        <h1>INPUT AND LABEL ELEMENTS</h1>
+        </head>
+        <body>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+              </form><hr>
+              <H1><SPAN STYLE="COLOR:GREEN">SELECT ELEMENT</SPAN> IT IS USED TO SELECT ONE AMONG MANY OPTIONS</H1>
+              <form action="/action_page.php">
+                <label for="bike">Choose a bike:</label>
+                <select id="bike" name="bike">
+                  <option value="royal">royal</option>
+                  <option value="pulsar">pulsar</option>
+                  <option value="fz">fz</option>
+                  <option value="duke">duke</option>
+                </select>
+                <input type="submit" value="submit">
+              </form><HR>
+                <H1>To define a pre-selected option, add the <SPAN STYLE="color: rgb(18, 29, 194);">selected</SPAN> attribute to the option:</H1>
+                <form action="/action_page.php">
+                    <label for="bike">Choose a bike:</label>
+                    <select id="bike" name="bike">
+                      <option value="royal">royal</option>
+                      <option value="pulsar">pulsar</option>
+                      <option value="fz">fz</option>
+                      <option value="duke" SELECTED>duke</option>
+                    </select>
+                    <input type="submit" value="submit">
+                  </form><HR>
+                    <H1>Use the<SPAN STYLE="color: crimson;"> multiple </SPAN>attribute to allow the user to select more than one value:</H1>
+                    <form action="/action_page.php">
+                    <label for="bike">Choose a bike:</label>
+                    <select id="bike" name="bike" SIZE="4" MULTIPLE >
+                      <option value="royal">royal</option>
+                      <option value="pulsar">pulsar</option>
+                      <option value="fz">fz</option>
+                      <option value="duke" SELECTED>duke</option>
+                    </select>
+                    <input type="submit" value="submit">
+                  </form><HR>
+                    <h1>TEXT AREA ELEMENT This is text area element is used to define a multi-line input field</h1>
+                    <FORM action="/action-page.php">
+                        <textarea name="message"  rows="20" cols="30">This is text area element is used to define a multi-line input field</textarea>
+                       </FORM><hr>
+                       <h1 STYLE="text-align: center;">BUTTON ELEMENT</h1>
+                       <button type="button" onclick="alert('THIS IS BUTTON ELEMENT')">Click Me!</button><HR>
+                        <H1>THE FIELDSET AND LEGEND ELEMENTS</H1>
+                        <form action="/action_page.php">
+                            <fieldset>
+                              <legend>INFORMATION:</legend>
+                              <label for="fname">First name:</label><br>
+                              <input type="text" id="fname" name="fname" value="John"><br>
+                              <label for="lname">Last name:</label><br>
+                              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                              <input type="submit" value="Submit">
+                            </fieldset>
+                        </form><HR>
+                        <<h2>The datalist Element</h2>
+
+                            <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+                            <form action="/action_page.php">
+                                <input list="browsers" name="browser">
+                                <datalist id="browsers">
+                                  <option value="Internet Explorer">
+                                  <option value="Firefox">
+                                  <option value="Chrome">
+                                  <option value="Opera">
+                                  <option value="Safari">
+                                </datalist>
+                                <input type="submit">
+                              </form>
+                            </body>
+                             </html> 
