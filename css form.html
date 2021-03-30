@@ -1,0 +1,80 @@
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(126, 94, 168);
+  border-radius: 5px;
+}
+
+input[type=NUMBER], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(126, 94, 168);
+  border-radius: 5px;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #020518;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0cd32d;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #8941cc;
+  padding: 20px;
+}
+H1{
+    text-align:center ;
+}
+</style>
+<body>
+
+<h1>SIGN IN FORM USING CSS</h1>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="ENTER YOUR NAME..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="ENTER YOUR LAST NAME..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <OPTION value="select your country">CHOOSE YOUR COUNTRY...</OPTION>
+      <option value="india">india</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+       <label for="state">STATE</label>
+       <select id="state" name="state">
+        <option value="select your state" >SELECT YOUR STATE...</option>
+        <option value="TELANGANA">TELANGANA</option>
+       <option value="ANDHRAPRADESH">ANDHRAPRADESH</option>
+       <option value="DELHI">DELHI</option>
+       <option value="ARUNACHALPRADESH">ARUNACHALPRADESH</option>
+    </select>
+
+    <label for="PINCODE">PINCODE</label>
+    <input type="number" id="number"  placeholder="ENTER YOUR PINCODE..">
+   <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

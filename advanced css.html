@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style>
+            
+                .corner1{
+                    border-radius:25px;
+                    background:blueviolet;
+                    padding:15px;
+                    width:150px;
+                    height:150px;
+                }
+                .corner2{
+                    border-radius:25px 15px 20px 20px;
+                    border:solid;
+                    padding:15px;
+                    width:150px;
+                    height:150px;
+                }
+                .corner3{
+                    border-radius:25px;
+                    border:solid;
+                    color:white;
+                    background:url(sun.jpg);
+                    background-position:left top;
+                    background-repeat:no-repeat;
+                    padding:20px;
+                    width:200px;
+                    height:140px;
+                     }
+                     #example1 {
+                              background-image: url(sun.jpg), url(tree.jpg);
+                              background-position: right bottom, left top;
+                              background-repeat: no-repeat, no-repeat;
+                              padding: 15px;
+}
+                              #borderimg{
+                                  border:10px solid black;
+                                  padding:10px;
+                                  border-image:url(image.jpg) 20 round;
+                              }
+                          .grad1{
+                              height:200px;
+                              background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                              border:2px solid black;
+                          }    
+                          .grad2{
+                              height:200px;
+                              width:250px;
+                              background-image: radial-gradient(circle, red,yellow,green);
+                          }
+                          .shadow {
+                               width: 300px;
+                                height: 100px;
+                                 padding: 15px;
+                                background-color: yellow;
+                                 box-shadow: 10px 10px grey;
+                                  }
+
+            </style>
+          </head>
+          <body>
+              <h1 style="text-align:center;">advanced css concepts</h1>
+              <hr>
+              <h2>border radius</h2>
+              <P class="corner1">rounded corner with background color</P>
+              <h2>using border radius shorthand property</h2>
+               <p class="corner2">rounded corner without background color</p>
+               <p class="corner3">rounded corner with image</p>
+              <hr>
+              <h1>Multiple Backgrounds</h1>
+                <p>The following div element has two background images:</p>
+
+               <div id="example1">
+                 <h1>Lorem Ipsum Dolor</h1>
+             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+             <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+             </div>
+             <hr>
+             <h1>border image</h1>
+             <p id="borderimg">border image</p>
+             <hr>
+             <h1>css gradients(linear gradient)</h1>
+             <div class="grad1"></div><hr>
+             <h1>css radial gradient</h1>
+             <div  class="grad2"></div>
+             <hr>
+             <h1>box shadow</h1>
+             <div class="shadow">this is div element with box shadow</div>
+              </body>
+    </html>

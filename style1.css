@@ -1,0 +1,35 @@
+*
+{
+    padding:0%
+    margin:0%
+    box-sizing: border-box;
+}
+body{
+    background-image: url(sun.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}
+    .navbar{
+            background:rgba(0,100,0);
+            text-align: center;
+    }
+.navbar ul{
+    display:inline-flex;
+    list-style-type:none;
+    color:white;
+}
+.navbar ul li{
+    width:120px;
+    margin:15px;
+    padding: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active , .navbar ul li:hover{
+    background-color: cyan;
+    border-radius: 3px;
+}

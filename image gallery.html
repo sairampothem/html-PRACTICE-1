@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head><h1>css image gallery</h1><hr>
+<style>
+  h1{
+    text-align:center;
+  }
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height:180px;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+
+div.d {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="sun.jpg">
+    <img src="./sun.jpg" width="600" height="400">
+  </a>
+  <div class="d">sun image</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="water.jpg">
+    <img src="./water.jpg" width="600" height="400">
+  </a>
+  <div class="d"> water drop image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="tree.jpg">
+    <img src="./tree.jpg" width="600" height="400">
+  </a>
+  <div class="d">nature tree image here</div>
+</div>
+
+</body>
+</html>
